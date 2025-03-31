@@ -242,11 +242,21 @@ footer img {
     width: 35px;
 }
 /* Mobile */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     header {
         display: none;
     }
     /* Home */
+    .hero .container {
+        flex-direction: column;
+    }
+    .hero img {
+        width: 100%;
+        padding: 20px;
+    }
+    .hero .hero-text {
+        width: 100%;
+    }
     .feature-container, .testimonial-container {
         display: flex;
         flex-direction: column;
@@ -298,7 +308,7 @@ footer img {
     }
 }
 /* Tablet */
-@media (min-width:769px) and (max-width: 1024px) {
+@media only screen and (min-width:769px) and (max-width: 1024px) {
     header {
         display: none;
     }
